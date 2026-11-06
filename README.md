@@ -9,6 +9,6 @@ Written using React (i think??). Very outdated, help re-writing would be
 appreciated!
 
 
-Attrbution:
+## Attrbution:
 - Current active maintainer: @rmamet
 - Original developer: @ethanf108
