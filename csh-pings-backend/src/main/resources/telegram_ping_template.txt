@@ -1,3 +1,0 @@
-%%%BODY%%%
-
-This ping was sent by %%%APPLICATION%%%. Configure your pings on %%%URL%%%
