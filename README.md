@@ -7,6 +7,23 @@ Written in python. Currently undergoing a re-write in the develop branch.
 The code for the backend is hereby licensed under [AGPLv3 or
 later](/LICENSES/AGPLv3-or-later)
 
+### Contributing:
+
+Change directory into csh-pings-backend:
+```sh
+cd csh-pings-backend
+```
+
+Set up the python venv:
+```sh
+. .venv/bin/activate
+```
+
+Install requirements:
+```sh
+pip install -r requirements.txt
+```
+
 ## csh-pings-frontend
 Written using React (i think??). Very outdated, help re-writing would be
 appreciated!
