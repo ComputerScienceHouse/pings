@@ -21,6 +21,8 @@ from flask_pyoidc import OIDCAuthentication
 from flask_pyoidc.provider_configuration import ProviderConfiguration, ClientMetadata
 from flask_pyoidc.user_session import UserSession
 
+from markupsafe import escape
+
 from dotenv import load_dotenv
 import os
 
@@ -63,5 +65,6 @@ def logout():
 @app.route("/api/status")
 @auth.oidc_auth('default')
 def authed_status():
-    username = request.cookies.get('sso_session')
-    return f"username: {username}"
+    user_session = UserSession(flask.session)
+    username = escape(user_session.userinfo['preferred_username'])
+    return f"Hi @{username}, you are connected and authenticated :)"

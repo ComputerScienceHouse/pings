@@ -24,6 +24,11 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
+Run flask:
+```sh
+python -m flask run --port 8080
+```
+
 ## csh-pings-frontend
 Written using React (i think??). Very outdated, help re-writing would be
 appreciated!
